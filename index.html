@@ -9,11 +9,40 @@
     <div>
         <h1>Simple To-Do List</h1>
         <input type="text" id="inputField"/>
-        <butto>Click Me.</butto>
+        <button>Click Me.</button>
         <div class="todoListsElem"></div>
     </div>
     <script>
-        
+        let inputElem = document.getElementById("inputField");
+        // console.log(inputElem);
+        let clickBtn = document.querySelector('button');
+        // console.log(clickBtn);
+        let todoElem = document.querySelector(".todoListsElem");
+        // console.log(todoElem);
+ 
+        let addTodo = () => {
+            // console.log(inputElem.value);
+
+            let pElem = document.createElement('p');
+            pElem.textContent = inputElem.value;
+
+            todoElem.append(pElem);
+
+            inputElem.value = "";
+        }
+
+        todoElem.addEventListener('click',(event) => {
+            // console.log(event.target);
+
+            let deleteElement = event.target;
+            deleteElement.remove();
+        })
+
+        clickBtn.addEventListener('click',() => {
+            addTodo();
+        });
+
+
     </script>
 </body>
 </html>
