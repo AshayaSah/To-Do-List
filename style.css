@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+	font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#main{
+    padding: 20px;
+    border: 5px solid mediumaquamarine;
+    background-color: antiquewhite;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    /* From https://css.glass */
+    background: rgba(179, 146, 146, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(179, 146, 146, 0.3);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: antiquewhite;
+}
+
+.text_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 250px;
+    border-radius: 20px;
+    height: 25px;
+}
+
+button{
+    width: 70px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.todo{
+    margin-left: 15px;
+    cursor: default;
+    margin-top: 8px;
+    color: white;
+}

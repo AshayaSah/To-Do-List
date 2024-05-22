@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div id="main">
         <h1>Simple To-Do List</h1>
-        <input type="text" id="inputField"/>
-        <button>Click Me.</button>
-        <div class="todoListsElem"></div>
+        <div class="text_box">
+            <input type="text" id="inputField"/>
+            <button>Click Me</button>
+        </div>
+        <hr>
+        <div class="todo">
+            <ol class="todoListsElem">
+            </ol>
+        </div>
     </div>
     <script>
         let inputElem = document.getElementById("inputField");
@@ -23,7 +30,7 @@
         let addTodo = () => {
             // console.log(inputElem.value);
 
-            let pElem = document.createElement('p');
+            let pElem = document.createElement('li');
             pElem.textContent = inputElem.value;
 
             todoElem.append(pElem);
