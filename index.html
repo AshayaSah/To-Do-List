@@ -3,53 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Document</title>
 </head>
 <body>
     <div id="main">
-        <h1>Simple To-Do List</h1>
+        <h2>Simple To-Do List</h2>
         <div class="text_box">
-            <input type="text" id="inputField"/>
-            <button>Click Me</button>
+            <input type="text" id="inputField" placeholder="Add Something ..."/>
+            <button class="addBtn">Add List</button>
         </div>
         <hr>
         <div class="todo">
-            <ol class="todoListsElem">
-            </ol>
         </div>
     </div>
-    <script>
-        let inputElem = document.getElementById("inputField");
-        // console.log(inputElem);
-        let clickBtn = document.querySelector('button');
-        // console.log(clickBtn);
-        let todoElem = document.querySelector(".todoListsElem");
-        // console.log(todoElem);
- 
-        let addTodo = () => {
-            // console.log(inputElem.value);
-
-            let pElem = document.createElement('li');
-            pElem.textContent = inputElem.value;
-
-            todoElem.append(pElem);
-
-            inputElem.value = "";
-        }
-
-        todoElem.addEventListener('click',(event) => {
-            // console.log(event.target);
-
-            let deleteElement = event.target;
-            deleteElement.remove();
-        })
-
-        clickBtn.addEventListener('click',() => {
-            addTodo();
-        });
-
-
-    </script>
+<script src="JS/script.js"></script>
 </body>
 </html>

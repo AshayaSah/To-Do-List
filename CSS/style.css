@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+	font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #0f314c 0%, #15b090 100%);
+    min-height: fit-content;
+}
+
+#main{
+    padding: 20px;
+    /* border: 5px solid mediumaquamarine;
+    background-color: antiquewhite; */
+    /* height: 500px; */
+    width: 400px;
+    border-radius: 20px;
+    /* From https://css.glass */
+    background: rgba(179, 146, 146, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(179, 146, 146, 0.3);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: antiquewhite;
+    font-weight: 300;
+}
+
+.text_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 250px;
+    border-radius: 10px;
+    height: 30px;
+    border: 1px rgb(222, 251, 251);
+    padding: 10px;
+}
+input:focus {
+    outline-width: 0;
+    border:1px solid rgb(79, 79, 79); ;
+}
+
+button{
+    width: 80px;
+    border: 5px rgb(222, 251, 251);
+    border-radius: 10px;
+    height: 25px;
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+
+button:hover{
+    /* height: 28px;
+    width: 82px; */
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 15px;;
+    background-color: white;
+    color: rgb(79, 79, 79);
+    transition: 0.3s ease-in-out;
+}
+
+.todo{
+    margin-left: 15px;
+    cursor: default;
+    margin-top: 8px;
+    color: white;
+}
+
+.innerDivElem{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.deleteBtn {
+    color: rgb(79, 79, 79);
+    background-color: white;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(79, 79, 79);
+    color: white;
+    border: 1px solid white;
+    height: 25px;
+    width: 80px;
+}
